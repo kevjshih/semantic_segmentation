@@ -18,18 +18,18 @@ class PascalContextData(Data):
         self._batch_size = 10 # default
         f.close()
 
-    def set_batch_size(bsize):
+    def set_batch_size(self, bsize):
         self._batch_size = bsize
         
-    def get_batch(ind):
+    def get_batch(self,ind):
         # implement me!
 
-    def shuffle():
+    def shuffle(self):
         np.random.shuffle(self_ids)
 
-    def get_num_examples():
+    def get_num_examples(self):
         return len(self._ids)
 
-    def get_num_batches():
+    def get_num_batches(self):
         # round up
         return round(len(self._ids) / self._batch_size)

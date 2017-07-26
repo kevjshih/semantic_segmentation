@@ -10,27 +10,27 @@ class Data:
 		pass
 		
 	# returns batch	corresponding to index
-	def get_batch(ind):
+	def get_batch(self, ind):
 		pass
 
 	# partition the dataset into batches of size bsize
-	def set_batch_size(bsize):
+	def set_batch_size(self, bsize):
 		self._batch_size = bsize
 		# update other stuff as necessary
 
 		
-	def get_batch_size():
+	def get_batch_size(self):
 		return self._batch_size
 
 	
 	# returns number of batches per epoch
-	def get_num_batches():
+	def get_num_batches(self):
 		pass
 
 	# returns number of examples in epoch
-	def get_num_examples():
+	def get_num_examples(self):
 		pass
 	
 	# shuffles the dataset 
-	def shuffle():
+	def shuffle(self):
 		pass

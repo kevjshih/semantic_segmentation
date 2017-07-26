@@ -1,1 +1,8 @@
-#TODO
+==Contributing==
+Use tabs, not spaces
+
+==Code Structure==
+data.py: interface for encapsulating datasets
+train.py: train loop
+model.py: interface for models
+Configurations handled with yaml files

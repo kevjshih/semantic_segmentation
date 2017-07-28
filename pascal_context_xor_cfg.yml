@@ -1,3 +1,4 @@
+name: pascal_context
 segdir: /home/ssd/PASCAL2010/
 VOCdir: /home/ssd/VOCdevkit/VOC2010/
 idlist: pascal_context_trainval_files.txt

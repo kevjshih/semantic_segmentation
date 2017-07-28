@@ -1,22 +1,22 @@
 """
 dataset encapsulation class for PASCAL Context Dataset
 """
-import yaml
+
 import scipy.io.loadmat as loadmat
 import numpy as np
 
 class PascalContextData(Data):
     def __init__(self, cfg):
         super().__init__()
-        f = open(cfg, 'r')
-        data = yaml.load(f)
-        self._segdir = data.segdir
-        self._VOCdir = data.VOCdir
-        fid = open(data.idlist, 'r')
+
+        cfg = yaml.load(f)
+        self._segdir = cfg.segdir
+        self._VOCdir = cfg.VOCdir
+        fid = open(cfg.idlist, 'r')
         fids = fid.readlines()       
         self._ids = [s.strip() for s in fids]
         self._batch_size = 10 # default
-        f.close()
+        fid.close()
 
     def set_batch_size(self, bsize):
         self._batch_size = bsize

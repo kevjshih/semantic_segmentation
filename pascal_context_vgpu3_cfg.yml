@@ -1,0 +1,5 @@
+name: pascal_context
+segdir: /data/kjshih2/VOC2010_context/
+VOCdir: /data/kjshih2/VOC2010/VOCdevkit/VOC2010/
+idlist: pascal_context_trainval_files.txt
+
